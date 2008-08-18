@@ -1,0 +1,3 @@
+tail -f /var/log/httpd-access.log | awk '/\d/ {for(i=12;i<=NF;i++) printf "%s ",$i; printf "\n"}'
+
+cat /var/log/httpd-access.log | awk '/\d/ {for(i=12;i<=NF;i++) printf "%s ",$i; printf "\n"}' | awk '{arr[$0]=$0} END {for(key in arr){print arr[key]}}' | sort

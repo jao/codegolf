@@ -1,0 +1,1 @@
+$w=" on the wall";sub b{" bottle".($_!=1&&"s")." of beer"}print$_.b."$w, $_".b.".\n".(1==$_--?"Go to the store and buy some more, 99":"Take one down and pass it around, ".$_).b."$w.\n\n"for reverse 1..99
