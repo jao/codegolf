@@ -1,9 +1,4 @@
-($h,$m)=split/:/,<>;
-$h-=12 if $h>12;
-$m-=$m%5;$m/=5;
-$m=12 if $m==0;
-@c=qw(o o o o o o o o o o o o o);
-@c[$h]='h';@c[$m]=$h==$m?'x':'m';
+($h,$m)=split/:/,<>;$h-=12 if $h>12;$m-=$m%5;$m/=5;$m=12 if $m==0;@c=qw(o o o o o o o o o o o o o);@c[$h]='h';@c[$m]=$h==$m?'x':'m';
 print "        $c[12]
     $c[11]       $c[1]
 
