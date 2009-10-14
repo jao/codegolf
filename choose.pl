@@ -1,1 +1,1 @@
-($n,$k)=<>=~/(\d+)/g;sub u{shift;$_==0?1:u($_-1)}print u($n)/(u($n-$k)*u$k)
+($n,$k)=<>=~/\d+/g;sub f{$i=1;$i*=$_ for 2..shift;$i}print f($n)/(f($n-$k)*f$k)
