@@ -1,0 +1,1 @@
+w=" on the wall";def b m;" bottle#{'s'if m!=1} of beer";end;99.downto(1){|i|puts"#{i}#{b i}#{w}, #{i}#{b i}.\n"+(i==1?"Go to the store and buy some more, 99":"Take one down and pass it around, #{i-1}")+"#{b i-1}#{w}.\n\n"}

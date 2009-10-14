@@ -1,0 +1,50 @@
+http://codegolf.com/choose
+What language will you choose?
+
+The Problem
+The aim of this challenge is to calculate the number of ways you can choose k items from a set of size n, where order doesn't matter. This is the same as calculating the binomial coefficient or choose function of n and k, and can be read as 'n choose k', and is usually represented by :
+
+
+Given n and k as positive integers, you can use the following equation to calculate the answer :
+
+
+In the equation above, n! means 'n factorial'. If n were 5, you would calculate it as follows :
+
+
+As a worked example, if you had n=7 and k=3, you would arrive at the answer as below :
+
+
+More Information
+The numbers n and k will be passed to your program on stdin, seperated by a comma and a space, and will be followed by a newline. Only one line will be passed to your program each time it is run.
+
+Your program should output the answer to stdout, followed by an optional newline.
+
+n will always be in the range 1 to 100 inclusive.
+
+k will always be in the range 0 to n inclusive.
+
+To ensure that languages which do not have a built-in big integer type can compete, the final answer will not be greater then 20,000,000. However, please note that a straightforward approach to solving the challenge using factorials will usually result in intermediate values greater than 2**32.
+
+The following Wikipedia links may help with the challenge :
+
+Binomial coefficient
+Combination
+Factorial
+The images you see above are taken from these articles.
+
+Each submission you make will be run 12 times. You will need to pass every test for your submission to be deemed successful. The first seven tests will always have the same values of n and k. The remaining five tests will have random values.
+
+Examples
+To see the input your program will receive and the expected answer for the first seven tests, click the links below :
+
+Test 1 : n=5, k=3.
+Test 2 : n=22, k=9.
+Test 3 : n=100, k=3.
+Test 4 : n=75, k=71.
+Test 5 : n=30, k=1.
+Test 6 : n=1, k=1.
+Test 7 : n=4, k=0.
+To see an example of the random values your program will receive in tests 8 through 12, click here. Reload the page to see further examples.
+
+Thanks
+Thanks go to Flagitious for sending in this challenge. Something that might be of interest to you Code Golfers - He recently created a language called GolfScript which was designed specifically to be good for golfing. Please visit the site and have a look. This challenge can be solved in 21 bytes in GolfScript, which he estimates being half the size of what the winning submission on Code Golf will be!
